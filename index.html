@@ -32,7 +32,7 @@
 
 	
 <body>
-	
+
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
@@ -43,14 +43,14 @@
                 <name>Guihong Li</name>
               </p>
               <p>
-                I'm a MTS (Member of Technical Staff) at <a href="https://www.amd.com/">AMD</a> where I focus on efficient Generative AI models and systems design. Before joining AMD, I obtained my Ph.D. degree from <a href="https://www.utexas.edu/">UT Austin</a> in May 2024.
+                I'm a MTS (Member of Technical Staff) at <a href="https://www.amd.com/">AMD</a> where I focus on efficient Generative AI models and large-scale training systems. I received my Ph.D. from <a href="https://www.utexas.edu/">UT Austin</a> in May 2024. My research has been published at top-tier venues including <b>NeurIPS</b>, <b>COLM</b>, <b>ICLR</b>, <b>ICML</b>, and <b>CVPR</b>.
               </p>
               <p>
-                My current research interests include:
+                <b>Research Focus</b>: Building next-generation efficient LLM architectures and scalable training infrastructure for foundation models. I specialize in:
               </p>
               <ul>
-                <li><b>Efficient Generative AI Models Design</b>: I am doing the research to build the next-gen of model architecture to accelerate inference throughput, including foundation LLMs and diffusion models.</li>
-                <li><b>Efficient Training Systems</b>: I am building efficient, reliable and large-scale data centers to enable the training of large foundation AI models. My work focuses on improving training performance on Megatron-LM, JAX, and native PyTorch on AMD hardware platforms.</li>
+                <li><b>Efficient LLM Architectures</b>: Developed hybrid models achieving up to <b>50x KV cache compression</b> and <b>3.6x inference speedup</b> through novel attention mechanisms (MLA, Mamba) and distillation strategies.</li>
+                <li><b>Large-Scale Training Systems</b>: Optimized distributed training with various parallelism strategies (DP, FSDP, EP) for dense and MoE models across <b>PyTorch, JAX, and Megatron-LM</b>. Delivered production-ready training systems for enterprise customers.</li>
               </ul>
               <p style="text-align:center">
                 <a href="mailto:guihong.li@amd.com">Email</a> &nbsp/&nbsp
@@ -66,6 +66,23 @@
 		
 	</tbody>
         </table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Key Achievements</heading>
+              <div class="achievement-box">
+                <ul style="margin:0;">
+                  <li style="list-style-position:inside;margin:5px 0;padding:0;text-align:left;"><b>Zebra-Llama</b> (NeurIPS 2025): AMD's hybrid MLA-Mamba LLM achieving <b>50x KV cache compression</b> and <b>3.6x inference speedup</b> via novel 3-stage distillation strategy.</li>
+                  <li style="list-style-position:inside;margin:5px 0;padding:0;text-align:left;"><b>X-EcoMLA</b> (COLM 2025): Upcycled GQA/MHA to MLA achieving <b>12.8x KV compression</b> and <b>2x inference speedup</b> with minimal quality loss.</li>
+                  <li style="list-style-position:inside;margin:5px 0;padding:0;text-align:left;"><b>Production Impact</b>: Delivered scalable <b>MI300X GPU training systems</b> to enterprise customers; led development of AMD's unified training docker.</li>
+                  <li style="list-style-position:inside;margin:5px 0;padding:0;text-align:left;"><b>Research Contributions</b>: Published <b>15+ papers</b> at top-tier venues (NeurIPS, ICLR, ICML, CVPR) with focus on efficient architectures and training systems.</li>
+        </ul>
+      </div>
+            </td>
+          </tr>
+        </tbody></table>
+        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -87,8 +104,8 @@
                   <li style="list-style-position:inside;margin:0;padding:0;text-align:left;"><b>05-2023</b>: One paper accepted to ICML 2023</li>
                   <li style="list-style-position:inside;margin:0;padding:0;text-align:left;"><b>02-2023</b>: One paper accepted to CVPR 2023</li>
                   <li style="list-style-position:inside;margin:0;padding:0;text-align:left;"><b>01-2023</b>: One paper accepted to ICLR 2023 as <b><font color="red">Spotlight</font></b></li>
-                </ul>
-              </p>
+    </ul>
+  </p>
             </td>
           </tr>
 		
@@ -106,36 +123,37 @@
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <p>
-                <b>Member of Technical Staff @ AMD</b>
+                <b>Member of Technical Staff @ AMD AI Group</b>
                 <br>
-                <i>Bellevue, June 2024 - Now</i>
+                <i>Bellevue, WA · June 2024 - Present</i>
               </p>
               <ul>
-                <li><b>Efficient Generative AI Models Design</b>: Improve the inference efficiency for high-cost generative AI models, including large language models and diffusion models.</li>
-                <li><b>Efficient Training Systems</b>: Build the efficient large-scale data centers to enable the training of large foundation AI models.</li>
-              </ul>
-              <p>
+                <li><b>Efficient LLM Architectures</b>: Developed Zebra-Llama (50x KV compression, 3.6x speedup) and X-EcoMLA (12.8x compression, 2x speedup) - AMD's first hybrid models combining MLA and Mamba architectures. Research on autoregressive to block diffusion adaptation and byte-level LLM distillation.</li>
+                <li><b>Large-Scale Training Optimization</b>: Performance analysis and optimization for distributed training (DP, FSDP, EP) on dense and MoE models in PyTorch and JAX. Delivered production MI300X training systems to enterprise customers.</li>
+                <li><b>Infrastructure & Tools</b>: Proposed and led development of AMD's unified training docker. Built efficient fine-tuning recipes for MI300X. Contributed to MI325X GPU and RoCm-6.2 releases.</li>
+    </ul>
+  <p>
                 <b>Applied Scientist Intern @ JPMorgan Chase & Co</b>
                 <br>
-                <i>New York, June 2023 - October 2023</i>
+    <i>New York, June 2023 - October 2023</i>
                 <br>
-                Mentors: Dr. Richard Chun-Fu Chen, Dr. Hsiang Hsu
+    Mentors: Dr. Richard Chun-Fu Chen, Dr. Hsiang Hsu
               </p>
-              <ul>
+    <ul>
                 <li><b>Trustworthy Generative models</b>: Control the contents generated by image generative models.</li>
                 <li><b>Efficient Machine Unlearning</b>: Build an efficient machine unlearning algorithm to quickly remove information from a trained model.</li>
-              </ul>
-              <p>
+    </ul>
+  <p>
                 <b>Research Scientist Intern @ ARM ML Tech</b>
                 <br>
-                <i>San Jose, May 2021 - August 2021</i>
+    <i>San Jose, May 2021 - August 2021</i>
                 <br>
-                Mentors: Dr. Kartikeya Bhardwaj, Dr. Naveen Suda, Dr. Lingchuan Meng
+    Mentors: Dr. Kartikeya Bhardwaj, Dr. Naveen Suda, Dr. Lingchuan Meng
               </p>
-              <ul>
+    <ul>
                 <li><b>Hardware-aware NAS</b>: Explored the neural architecture search technique to search for hardware-efficient models.</li>
                 <li><b>Hardware Performance evaluation</b>: Built a model to estimate neural networks' latency on neural accelerators.</li>
-              </ul>
+    </ul>
             </td>
           </tr>
         </tbody></table>
@@ -158,7 +176,7 @@
               <em>NeurIPS</em>, 2025
               <br>
               <a href="https://openreview.net/pdf?id=9hjVoPWPnh">paper</a>
-              <p></p>
+              <p style="margin-top:5px;"><i>AMD's first hybrid MLA-Mamba LLM achieving 50x KV cache compression and 3.6x inference speedup through novel 3-stage distillation and layer selection strategy.</i></p>
             </td>
           </tr>
           <tr>
@@ -170,7 +188,7 @@
               <em>COLM</em>, 2025
               <br>
               <a href="https://openreview.net/pdf?id=CPJ9EAeYfd">paper</a>
-              <p></p>
+              <p style="margin-top:5px;"><i>Novel technique for upcycling GQA/MHA modules to Multi-Latent Attention, achieving 12.8x KV cache compression and 2x inference speedup with minimal quality degradation.</i></p>
             </td>
           </tr>
           <tr>
@@ -194,7 +212,7 @@
               <em>ICLR</em>, 2024
               <br>
               <a href="https://openreview.net/pdf?id=9hjVoPWPnh">paper</a>
-              <p></p>
+              <p style="margin-top:5px;"><i>Efficient machine unlearning algorithm to quickly remove information from trained generative models, addressing trustworthiness and data privacy concerns.</i></p>
             </td>
           </tr>
           <tr>
@@ -254,7 +272,7 @@
               <em>ICLR</em>, 2023 &nbsp <font color="red"><b>(Spotlight)</b></font>
               <br>
               <a href="https://openreview.net/pdf?id=rwo-ls5GqGn">paper</a>
-              <p></p>
+              <p style="margin-top:5px;"><i>Zero-shot neural architecture search using gradient variation analysis, enabling efficient model discovery without training.</i></p>
             </td>
           </tr>
           <tr>
@@ -270,6 +288,28 @@
             </td>
           </tr>
         </tbody></table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Technical Expertise</heading>
+              <p>
+                <b>LLM Architectures</b>: Multi-Latent Attention (MLA), Mamba, GQA, MHA, Transformers, MoE models, Diffusion models
+                <br>
+                <b>Training Frameworks</b>: PyTorch, JAX, Megatron-LM, DeepSpeed, FSDP
+                <br>
+                <b>Distributed Training</b>: Data Parallelism (DP), Fully Sharded Data Parallelism (FSDP), Expert Parallelism (EP), Tensor Parallelism (TP)
+                <br>
+                <b>Optimization</b>: Knowledge distillation, Model compression, Quantization, Efficient fine-tuning (LoRA, Adapters)
+                <br>
+                <b>Hardware</b>: AMD MI300X, MI325X, NVIDIA GPUs, TPUs
+                <br>
+                <b>Systems</b>: Docker, Kubernetes, SLURM, RoCm, CUDA
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
